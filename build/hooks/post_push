@@ -1,0 +1,7 @@
+#!/bin/bash
+
+set -e
+
+# Tag and push image with additional `latest` tag
+docker tag $IMAGE_NAME $DOCKER_REPO:latest
+docker push $DOCKER_REPO:latest
